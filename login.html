@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEO Secure Gateway</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="login-body">
+    <div class="login-wrapper">
+        <div class="warning-banner">
+            <strong>RESTRICTED LAW ENFORCEMENT SYSTEM</strong>
+            <p>Authorized sworn personnel only. All access attempts are monitored and logged.</p>
+        </div>
+        <div class="login-card">
+            <h2>Officer Authentication</h2>
+            <!-- Leads straight to the report dashboard for simulation -->
+            <form action="leo-dashboard.html" method="GET">
+                <div class="form-group">
+                    <label>Badge Number / ID</label>
+                    <input type="text" placeholder="e.g., #402" required>
+                </div>
+                <div class="form-group">
+                    <label>Secure Password</label>
+                    <input type="password" required>
+                </div>
+                <div class="form-group">
+                    <label>MFA Token Code</label>
+                    <input type="text" placeholder="6-digit authenticator code" required>
+                </div>
+                <button type="submit" class="btn-secure-full">Secure Login</button>
+            </form>
+            <a href="index.html" class="back-home">&larr; Return to Public Portal</a>
+        </div>
+    </div>
+</body>
+</html>
