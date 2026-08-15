@@ -3,62 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FCSO Secure RMS - Incident Entry</title>
+    <title>FCSO RMS - Report Writer</title>
     <link rel="stylesheet" href="main.css">
 </head>
-<body class="leo-body">
-    <header>
+<body>
+    <header class="leo-header">
         <div class="container header-container">
             <div class="logo-area">
                 <img src="logo.png" alt="FCSO Logo" class="site-logo">
-                <h1>FCSO Secure Records Management</h1>
+                <h1>FCSO Secure RMS - Restricted Network</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="home.html">Log Out</a></li>
+                    <li><a href="index.html" class="btn-logout">Sign Out</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div class="container leo-container">
-        <h2>Law Enforcement: Submit Incident Report</h2>
-        <p><em>Restricted System. Enter all incident details below for official archival.</em></p>
+    <section class="container page-content">
+        <h2>RMS Incident & Narrative Report Writer</h2>
+        <p class="section-sub">Type and submit formal law enforcement reports directly into the secure database archive.</p>
         
-        <form class="leo-form" onsubmit="event.preventDefault(); alert('Report successfully transmitted to secure RMS database.');">
+        <form class="public-form leo-bg" onsubmit="event.preventDefault(); alert('Report successfully locked, encrypted, and filed to the Master RMS Database.');">
             <div class="form-group">
-                <label>Reporting Officer (Name & Badge #)</label>
-                <input type="text" placeholder="e.g., Dep. J. Miller #402" required>
+                <label>Reporting Deputy (Name & Badge #)</label>
+                <input type="text" placeholder="Deputy J. Vance #104" required>
             </div>
-
             <div class="form-group">
-                <label>Incident Type / Classification</label>
+                <label>CAD / Incident Reference Number</label>
+                <input type="text" placeholder="CAD-2026-00941" required>
+            </div>
+            <div class="form-group">
+                <label>Incident Classification</label>
                 <select required>
-                    <option value="">Select Incident Type...</option>
-                    <option>Traffic Stop / Citation</option>
-                    <option>Disturbance / Property Call</option>
-                    <option>Felony Arrest / Booking</option>
-                    <option>Warrant Execution</option>
+                    <option value="">Select Classification...</option>
+                    <option>Traffic Enforcement / Collision</option>
+                    <option>Property Crime / Burglary</option>
+                    <option>Violent Crime / Assault</option>
+                    <option>Warrant Service / Arrest</option>
                 </select>
             </div>
-
             <div class="form-group">
-                <label>Incident Date & Time</label>
-                <input type="datetime-local" required>
+                <label>Official Narrative Report</label>
+                <textarea rows="10" placeholder="Type formal investigative summary, statements, and details here..." required></textarea>
             </div>
-
-            <div class="form-group">
-                <label>Full Narrative / Report Details</label>
-                <textarea rows="8" placeholder="Type official narrative summary here..." required></textarea>
-            </div>
-            
-            <button type="submit" class="btn-primary">Submit to RMS Database</button>
+            <button type="submit" class="btn-primary">File Report to RMS</button>
         </form>
-    </div>
+    </section>
 
     <footer>
         <div class="container">
-            <p>FCSO Secure Internal Network | CJIS Compliant Environment</p>
+            <p>CJIS Secure Network Environment | Encrypted Connection</p>
         </div>
     </footer>
 </body>
