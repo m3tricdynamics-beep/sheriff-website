@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Records - Forrest County Sheriff's Office</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo-area">
+                <img src="logo.png" alt="FCSO Logo" class="site-logo">
+                <h1>Forrest County Sheriff's Office</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="leadership.html">Leadership</a></li>
+                    <li><a href="wanted.html">Wanted List</a></li>
+                    <li><a href="records.html" class="active">Public Records</a></li>
+                    <li><a href="login.html" class="btn-secure">LEO Portal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container page-content">
+        <h2>Public Records & Information Requests</h2>
+        <p class="section-sub">Submit a formal request for incident reports, dispatch logs, or public safety documentation.</p>
+        
+        <form class="public-form" onsubmit="event.preventDefault(); alert('Your public records request has been filed with the Records Clerk.');">
+            <div class="form-group">
+                <label>Requester Full Name</label>
+                <input type="text" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+                <label>Contact Email Address</label>
+                <input type="email" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+                <label>Nature of Records Requested</label>
+                <textarea rows="5" placeholder="Provide case numbers, dates, or specific incident details..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Submit FOIA Request</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Forrest County Sheriff's Office. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
