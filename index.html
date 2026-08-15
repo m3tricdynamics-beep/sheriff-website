@@ -3,81 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forrest County Sheriff's Office</title>
+    <title>Forrest County Sheriff's Office - Home</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header>
         <div class="container header-container">
             <div class="logo-area">
-                <!-- Make sure your image file is named logo.png and uploaded to GitHub -->
                 <img src="logo.png" alt="FCSO Logo" class="site-logo">
                 <h1>Forrest County Sheriff's Office</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#wanted">Wanted List</a></li>
-                    <li><a href="#leadership">Leadership</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="leadership.html">Leadership</a></li>
+                    <li><a href="wanted.html">Wanted List</a></li>
+                    <li><a href="records.html">Public Records</a></li>
                     <li><a href="login.html" class="btn-secure">LEO Portal</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="home" class="hero">
+    <section class="hero">
         <div class="container">
-            <h2>Public Safety & Community Trust</h2>
-            <p>Providing professional law enforcement services to the citizens of Forrest County.</p>
+            <h2>Committed to Service, Integrity, and Community</h2>
+            <p>Welcome to the official public portal of the Forrest County Sheriff's Office. Serving and protecting our community with honor.</p>
+            <a href="records.html" class="btn-hero">Request Public Records</a>
         </div>
     </section>
 
-    <!-- WANTED LIST SECTION -->
-    <section id="wanted" class="container">
-        <h2>Most Wanted</h2>
-        <p>If you have information regarding the whereabouts of any individuals listed below, please contact dispatch immediately.</p>
-        <table class="wanted-table">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Charge</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>John Doe</td>
-                    <td>Grand Theft Auto / Evading</td>
-                    <td><span class="badge-active">Active Warrant</span></td>
-                </tr>
-                <tr>
-                    <td>Jane Smith</td>
-                    <td>Failure to Appear (Felony)</td>
-                    <td><span class="badge-active">Active Warrant</span></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <!-- LEADERSHIP SECTION (Fictionalized) -->
-    <section id="leadership" class="container bg-light">
-        <h2>Office Leadership</h2>
-        <div class="grid-cards">
-            <div class="card">
-                <h3>Sheriff A. Jackson</h3>
-                <p><strong>Sheriff</strong></p>
-                <p>Leading the department with a strict commitment to public safety, community relations, and law enforcement excellence.</p>
-            </div>
-            <div class="card">
-                <h3>Undersheriff M. Rivers</h3>
-                <p><strong>Undersheriff</strong></p>
-                <p>Oversees daily field operations, patrol divisions, and administrative protocols across the county.</p>
-            </div>
+    <section class="container info-grid">
+        <div class="info-box">
+            <h3>Emergency Notice</h3>
+            <p>If you are experiencing an immediate life-threatening emergency or witnessing a crime in progress, dial <strong>911</strong> immediately. Do not submit reports online for emergencies.</p>
+        </div>
+        <div class="info-box">
+            <h3>Department Mission</h3>
+            <p>To enforce the law impartially, preserve the public peace, protect life and property, and maintain secure correctional facilities with professional excellence.</p>
         </div>
     </section>
 
     <footer>
         <div class="container">
+            <p>&copy; 2026 Forrest County Sheriff's Office. All Rights Reserved.</p>
+            <p>Headquarters: 55 Arena Dr | Non-Emergency Dispatch: (601) 544-7800</p>
+        </div>
+    </footer>
+</body>
+</html>
             <p>&copy; 2026 Forrest County Sheriff's Office. All Rights Reserved.</p>
         </div>
     </footer>
