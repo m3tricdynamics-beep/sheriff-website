@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forrest County Sheriff's Office</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo-area">
+                <h1>Forrest County Sheriff's Office</h1>
+                <p>Hattiesburg, Mississippi</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#public-records">Public Records (FOIA)</a></li>
+                    <li><a href="/secure-login" class="btn-secure">Law Enforcement Portal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Committed to Service, Integrity, and Community</h2>
+            <p>Welcome to the official website of the Forrest County Sheriff's Office. We are dedicated to enforcing the laws of the land and responding to community concerns in an honest and impartial manner.</p>
+        </div>
+    </section>
+
+    <section id="public-records" class="container bg-light">
+        <h2>Public Records Portal</h2>
+        <p>Access daily incident logs, arrest blotters, and submit official Freedom of Information Act (FOIA) requests.</p>
+        <button class="btn-primary">Submit a Record Request</button>
+        <button class="btn-secondary">View Arrest Blotter</button>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Forrest County Sheriff's Office. All Rights Reserved.</p>
+            <p>55 Arena Dr, Hattiesburg, MS 39401 | (601) 544-7800</p>
+        </div>
+    </footer>
+</body>
+</html>
