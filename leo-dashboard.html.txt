@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCSO Secure RMS - Incident Entry</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="leo-body">
+    <header>
+        <div class="container header-container">
+            <div class="logo-area">
+                <img src="logo.png" alt="FCSO Logo" class="site-logo">
+                <h1>FCSO Secure Records Management</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Log Out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container leo-container">
+        <h2>Law Enforcement: Submit Incident Report</h2>
+        <p><em>Restricted System. Enter all incident details below for official archival.</em></p>
+        
+        <form class="leo-form" onsubmit="event.preventDefault(); alert('Report successfully transmitted to secure RMS database.');">
+            <div class="form-group">
+                <label>Reporting Officer (Name & Badge #)</label>
+                <input type="text" placeholder="e.g., Dep. J. Miller #402" required>
+            </div>
+
+            <div class="form-group">
+                <label>Incident Type / Classification</label>
+                <select required>
+                    <option value="">Select Incident Type...</option>
+                    <option>Traffic Stop / Citation</option>
+                    <option>Disturbance / Property Call</option>
+                    <option>Felony Arrest / Booking</option>
+                    <option>Warrant Execution</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Incident Date & Time</label>
+                <input type="datetime-local" required>
+            </div>
+
+            <div class="form-group">
+                <label>Full Narrative / Report Details</label>
+                <textarea rows="8" placeholder="Type official narrative summary here..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-primary">Submit to RMS Database</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>FCSO Secure Internal Network | CJIS Compliant Environment</p>
+        </div>
+    </footer>
+</body>
+</html>

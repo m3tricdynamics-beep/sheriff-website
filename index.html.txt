@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forrest County Sheriff's Office</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo-area">
+                <!-- Make sure your image file is named logo.png and uploaded to GitHub -->
+                <img src="logo.png" alt="FCSO Logo" class="site-logo">
+                <h1>Forrest County Sheriff's Office</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#wanted">Wanted List</a></li>
+                    <li><a href="#leadership">Leadership</a></li>
+                    <li><a href="login.html" class="btn-secure">LEO Portal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Public Safety & Community Trust</h2>
+            <p>Providing professional law enforcement services to the citizens of Forrest County.</p>
+        </div>
+    </section>
+
+    <!-- WANTED LIST SECTION -->
+    <section id="wanted" class="container">
+        <h2>Most Wanted</h2>
+        <p>If you have information regarding the whereabouts of any individuals listed below, please contact dispatch immediately.</p>
+        <table class="wanted-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Charge</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Grand Theft Auto / Evading</td>
+                    <td><span class="badge-active">Active Warrant</span></td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>Failure to Appear (Felony)</td>
+                    <td><span class="badge-active">Active Warrant</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- LEADERSHIP SECTION (Fictionalized) -->
+    <section id="leadership" class="container bg-light">
+        <h2>Office Leadership</h2>
+        <div class="grid-cards">
+            <div class="card">
+                <h3>Sheriff A. Jackson</h3>
+                <p><strong>Sheriff</strong></p>
+                <p>Leading the department with a strict commitment to public safety, community relations, and law enforcement excellence.</p>
+            </div>
+            <div class="card">
+                <h3>Undersheriff M. Rivers</h3>
+                <p><strong>Undersheriff</strong></p>
+                <p>Oversees daily field operations, patrol divisions, and administrative protocols across the county.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Forrest County Sheriff's Office. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
