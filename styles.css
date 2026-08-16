@@ -1,124 +1,292 @@
 :root {
-    --primary-color: #163d22; /* Deep Forest Green */
-    --accent-gold: #c4a000;
-    --dark-bg: #111a13;
-    --light-bg: #f4f6f4;
-    --text-color: #222;
+    --lasd-green: #143820;        /* Deep Official LASD Forest Green */
+    --lasd-green-dark: #0b2213;   /* Darker shade for footers/accents */
+    --lasd-gold: #c5a059;         /* Official Brass/Gold Accent */
+    --lasd-bg: #f5f6f8;           /* Light professional background */
+    --lasd-text: #222222;         /* High contrast dark text */
+    --lasd-border: #dcdedf;       /* Clean border lines */
+    --lasd-red: #990000;          /* Alert / Secure Portal Red */
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: var(--text-color);
-    background-color: #fff;
-    line-height: 1.6;
+    background-color: var(--lasd-bg);
+    color: var(--lasd-text);
+    line-height: 1.5;
 }
 
 .container {
-    width: 90%;
-    max-width: 1100px;
+    width: 92%;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 10px 0;
 }
 
+/* --- LASD Header Layout --- */
 header {
-    background: var(--primary-color);
-    color: #fff;
-    padding: 15px 0;
-    border-bottom: 4px solid var(--accent-gold);
+    background-color: var(--lasd-green);
+    color: #ffffff;
+    border-bottom: 5px solid var(--lasd-gold);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 0;
 }
 
 .logo-area {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 18px;
 }
 
 .site-logo {
-    height: 60px;
+    height: 70px;
     width: auto;
 }
 
-.logo-area h1 {
+.agency-titles h1 {
     margin: 0;
-    font-size: 1.5rem;
-    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
+.agency-titles p {
+    margin: 3px 0 0 0;
+    font-size: 0.85rem;
+    color: #d1d8d3;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* --- Navigation Bar --- */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 8px;
     align-items: center;
     margin: 0;
     padding: 0;
 }
 
 nav a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
+    font-size: 0.9rem;
     font-weight: 600;
-    padding: 6px 10px;
-    border-radius: 4px;
-    transition: background 0.2s;
+    padding: 8px 14px;
+    border-radius: 3px;
+    transition: background 0.15s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 nav a:hover, nav a.active {
-    background: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
-.btn-secure {
-    background: #8b0000 !important;
+.btn-secure-nav {
+    background-color: var(--lasd-red) !important;
 }
 
+.btn-secure-nav:hover {
+    background-color: #770000 !important;
+}
+
+/* --- Hero & Emergency Banner --- */
 .hero {
-    background-color: var(--primary-color);
-    color: #fff;
+    background: linear-gradient(rgba(20, 56, 32, 0.92), rgba(20, 56, 32, 0.95)), url('hero-bg.jpg') center/cover;
+    color: #ffffff;
     text-align: center;
-    padding: 90px 20px;
+    padding: 70px 20px;
+    border-bottom: 1px solid var(--lasd-border);
 }
 
 .hero h2 {
-    font-size: 2.5rem;
-    margin-top: 0;
+    font-size: 2.3rem;
+    margin: 0 0 10px 0;
+    font-weight: 700;
 }
 
-.btn-hero {
-    display: inline-block;
-    background: var(--accent-gold);
-    color: #111;
-    padding: 12px 25px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-top: 20px;
+.hero p {
+    font-size: 1.05rem;
+    max-width: 750px;
+    margin: 0 auto 20px auto;
+    color: #e5ede7;
 }
 
-.info-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin: 40px auto;
-}
-
-.info-box {
-    background: var(--light-bg);
-    padding: 25px;
-    border-left: 5px solid var(--primary-color);
-    border-radius: 4px;
-}
-
+/* --- Portal Grid Layouts --- */
 .page-content {
     padding: 40px 0;
 }
 
+.section-header {
+    font-size: 1.7rem;
+    color: var(--lasd-green);
+    border-bottom: 2px solid var(--lasd-gold);
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.portal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.portal-card {
+    background: #ffffff;
+    border: 1px solid var(--lasd-border);
+    border-top: 4px solid var(--lasd-green);
+    border-radius: 4px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.portal-card h3 {
+    margin-top: 0;
+    color: var(--lasd-green);
+    font-size: 1.25rem;
+}
+
+.portal-card p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--lasd-green);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+/* --- Tables (Wanted / Records) --- */
+.lasd-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border: 1px solid var(--lasd-border);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+    margin-top: 15px;
+}
+
+.lasd-table th, .lasd-table td {
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--lasd-border);
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.lasd-table th {
+    background-color: var(--lasd-green);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.lasd-table tr:hover {
+    background-color: #f1f4f2;
+}
+
+.badge-active {
+    background-color: var(--lasd-red);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* --- Professional Forms --- */
+.lasd-form {
+    background: #ffffff;
+    padding: 35px;
+    border: 1px solid var(--lasd-border);
+    border-top: 5px solid var(--lasd-green);
+    border-radius: 4px;
+    max-width: 750px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: var(--lasd-green);
+    text-transform: uppercase;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid var(--lasd-border);
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 1rem;
+    background: #fdfdfd;
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--lasd-green);
+    background: #ffffff;
+}
+
+.btn-primary {
+    background: var(--lasd-green);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background: var(--lasd-green-dark);
+}
+
+/* --- Footer --- */
+footer {
+    background: var(--lasd-green-dark);
+    color: #a8b8ac;
+    text-align: center;
+    padding: 35px 0;
+    margin-top: 60px;
+    border-top: 4px solid var(--lasd-gold);
+}
+
+footer p {
+    margin: 6px 0;
+    font-size: 0.9rem;
+}
 .section-sub {
     color: #666;
     margin-bottom: 30px;
