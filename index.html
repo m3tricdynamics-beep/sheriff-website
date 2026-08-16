@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forrest County Sheriff's Office - Home</title>
+    <title>Forrest County Sheriff's Department</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header>
         <div class="container header-container">
             <div class="logo-area">
-                <img src="logo.png" alt="FCSO Logo" class="site-logo">
-                <h1>Forrest County Sheriff's Office</h1>
+                <img src="logo.png" alt="FCSO Badge" class="site-logo">
+                <div class="agency-titles">
+                    <h1>Forrest County</h1>
+                    <p>Sheriff's Department</p>
+                </div>
             </div>
             <nav>
                 <ul>
@@ -19,7 +22,7 @@
                     <li><a href="leadership.html">Leadership</a></li>
                     <li><a href="wanted.html">Wanted List</a></li>
                     <li><a href="records.html">Public Records</a></li>
-                    <li><a href="login.html" class="btn-secure">LEO Portal</a></li>
+                    <li><a href="login.html" class="btn-secure-nav">LEO Portal</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,32 +30,37 @@
 
     <section class="hero">
         <div class="container">
-            <h2>Committed to Service, Integrity, and Community</h2>
-            <p>Welcome to the official public portal of the Forrest County Sheriff's Office. Serving and protecting our community with honor.</p>
-            <a href="records.html" class="btn-hero">Request Public Records</a>
+            <h2>A Tradition of Service</h2>
+            <p>Welcome to the official digital portal of the Forrest County Sheriff's Department. Dedicated to protecting our communities with honor, integrity, and impartial enforcement.</p>
         </div>
     </section>
 
-    <section class="container info-grid">
-        <div class="info-box">
-            <h3>Emergency Notice</h3>
-            <p>If you are experiencing an immediate life-threatening emergency or witnessing a crime in progress, dial <strong>911</strong> immediately. Do not submit reports online for emergencies.</p>
+    <div class="container page-content">
+        <h2 class="section-header">Department Services & Resources</h2>
+        
+        <div class="portal-grid">
+            <div class="portal-card">
+                <h3>Most Wanted Fugitives</h3>
+                <p>View active county warrants, suspect profiles, and submit anonymous tips to support investigations.</p>
+                <a href="wanted.html" class="card-link">View Wanted List &rarr;</a>
+            </div>
+            <div class="portal-card">
+                <h3>Public Records & FOIA</h3>
+                <p>Submit official document requests, check daily incident logs, and access public safety disclosures.</p>
+                <a href="records.html" class="card-link">Request Records &rarr;</a>
+            </div>
+            <div class="portal-card">
+                <h3>Command Leadership</h3>
+                <p>Learn more about agency oversight, administrative divisions, and Sheriff Marcus V. Raines.</p>
+                <a href="leadership.html" class="card-link">Meet Leadership &rarr;</a>
+            </div>
         </div>
-        <div class="info-box">
-            <h3>Department Mission</h3>
-            <p>To enforce the law impartially, preserve the public peace, protect life and property, and maintain secure correctional facilities with professional excellence.</p>
-        </div>
-    </section>
+    </div>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Forrest County Sheriff's Office. All Rights Reserved.</p>
-            <p>Headquarters: 55 Arena Dr | Non-Emergency Dispatch: (601) 544-7800</p>
-        </div>
-    </footer>
-</body>
-</html>
-            <p>&copy; 2026 Forrest County Sheriff's Office. All Rights Reserved.</p>
+            <p>&copy; 2026 Forrest County Sheriff's Department. All Rights Reserved.</p>
+            <p>Emergency: Dial 911 | Non-Emergency Dispatch: (601) 544-7800</p>
         </div>
     </footer>
 </body>
